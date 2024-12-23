@@ -32,7 +32,7 @@ function DropBox() {
         setPrediction('Prediction failed');
         setImageSrc('');
       } else {
-        setPrediction(`Prediction: ${data.class}`);
+        setPrediction('Prediction: ' + data.class);
         setImageSrc(data.image); 
       }
     } catch (error) {
