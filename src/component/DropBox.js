@@ -32,7 +32,7 @@ function DropBox() {
         setImageSrc('');
       } else {
         setPrediction(data.class);
-        setImageSrc(data.image_url); 
+        setImageSrc(data.image_base64); 
       }
     } catch (error) {
       console.error('Error during prediction:', error);
