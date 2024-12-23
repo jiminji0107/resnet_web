@@ -23,8 +23,7 @@ function DropBox() {
     try {
       const response = await fetch('https://resnet-back.onrender.com/predict', {
         method: 'POST',
-        body: formData,
-        mode: 'no-cors'
+        body: formData
       });
       const data = await response.json();
 
